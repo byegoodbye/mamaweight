@@ -9,7 +9,7 @@
   </div>
   <ul>
     <li>
-      <img src= "assets/baby.png" alt="baby" class="baby-image">
+      <img src= "<%= asset_path "baby.png" %>" alt="baby" class="baby-image">
     </li>
   </ul>
   <% if current_user.weights.exists? %>

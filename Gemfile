@@ -52,6 +52,7 @@ gem 'devise'
 gem 'compass-rails'
 gem 'sprockets'
 gem 'lazy_high_charts'
+gem 'rails_12factor'
 
 group :production do
   gem 'rails_12factor'
