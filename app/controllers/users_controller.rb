@@ -19,9 +19,9 @@ class UsersController < ApplicationController
       if commentweight <= 0.05 then
         @babycomment = "ママのお腹の中\nとっても居心地がいいな\nいつもありがとう"
       elsif  commentweight > 0.05 && commentweight <= 0.1 then
-        @babycomment = "快適だなー  "
+        @babycomment = "快適だなー  うーん眠たい"
       elsif commentweight > 0.1 && commentweight <= 0.3 then
-        @babycomment = "暇だなー  お外で遊びたいな"
+        @babycomment = "ちょっと苦しい、気のせいかなぁ"
       elsif commentweight > 0.3 && commentweight <= 0.5 then
         @babycomment = "ママのお腹の中ちょっと苦しいな\nもっと広いところがいいな"
       elsif commentweight > 0.5 then

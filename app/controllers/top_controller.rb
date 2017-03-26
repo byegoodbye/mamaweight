@@ -11,9 +11,9 @@ class TopController < ApplicationController
         commentweight = @commentlist[0].weight - @commentlist[1].weight
 
         if commentweight <= 0.05 then
-          @babycomment = "ママのお腹の中とっても居心地がいいな\nいつもありがとう"
+          @babycomment = "ママのお腹の中\nとっても居心地がいいな\nいつもありがとう"
         elsif  commentweight > 0.05 && commentweight <= 0.1 then
-          @babycomment = "快適だなー うーん眠たい、"
+          @babycomment = "快適だなー  うーん眠たい"
         elsif commentweight > 0.1 && commentweight <= 0.3 then
           @babycomment = "ちょっと苦しい、気のせいかなぁ"
         elsif commentweight > 0.3 && commentweight <= 0.5 then
@@ -27,7 +27,7 @@ class TopController < ApplicationController
         @babycomment = "今日も一日お疲れ様！"
       end
     else
-      @babycomment = "体重を測定してね！"
+      @babycomment = "体重を測ってね！"
     end
   end
 end
