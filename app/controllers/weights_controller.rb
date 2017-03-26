@@ -21,6 +21,11 @@ class WeightsController < ApplicationController
     redirect_to root_url
   end
 
+  def destroy
+    weight = Weight.find(params[:id])
+    weight.destroy if weight.user_id == current_user.id
+  end
+
   private
   def weight_params
     params.require(:weight).permit(:weight)

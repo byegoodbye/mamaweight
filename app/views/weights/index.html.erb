@@ -1,1 +1,8 @@
-<%= high_chart("chart-1", @graph_data) %>
+<div class ="contents row" >
+  <%= high_chart("chart-1", @graph_data) %>
+  <ul class="more_list">
+    <li>
+      <%= link_to '削除', "/weights/#{@weights.ids}", method: :delete %>
+    </li>
+  </ul>
+</div>

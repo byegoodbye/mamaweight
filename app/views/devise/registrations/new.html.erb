@@ -4,14 +4,19 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-        <%= f.label :name %> <em>(10 characters maximum)</em><br />
-        <%= f.text_field :name, autofocus: true, maxlength: "10" %>
-      </div>
+    <%= f.label :name %> <em>(10 characters maximum)</em><br />
+    <%= f.text_field :name, autofocus: true, maxlength: "10" %>
+  </div>
 
   <div class="field">
-        <%= f.label :babyname %> <em>(10 characters maximum)</em><br />
-        <%= f.text_field :babyname, autofocus: true, maxlength: "10" %>
-      </div>
+    <%= f.label :babyname %> <em>(10 characters maximum)</em><br />
+    <%= f.text_field :babyname, autofocus: true, maxlength: "10" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date_of_birth %> <em>(8 characters maximum)</em><br />
+    <%= f.text_field :date_of_birth, autofocus: true, maxlength: "8" %>
+  </div>
 
   <div class="field">
     <%= f.label :email %><br />

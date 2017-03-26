@@ -1,8 +1,19 @@
-<div class = content>
-  <p><%= @topname %>さんの最新体重</p>
-  <p><%= @topweight %></p>
-  <p><%= @topname %>さんの体重変化</p>
-  <p><%= @weightchange %></p>
-  <p><%= @topbabyname %>ちゃんのコメント</p>
-  <p><%= @babycomment %></p>
+<div class ="contents row" >
+  <h1><%= @today %></h1>
+  <h1>今日の<%= @topbabyname %>ちゃん</h1>
+
+  <div class="ballon1">
+    <div class="balloon">
+      <h3><%= simple_format(@babycomment) %></h3>
+    </div>
+  </div>
+  <ul>
+    <li>
+      <img src= "assets/baby.png" alt="baby" class="baby-image">
+    </li>
+  </ul>
+  <% if current_user.weights.exists? %>
+  <h4><%= @topname %>さんの最新体重 <%= @topweight %>kg</h4>
+  <h4>妊娠してからの体重変化 <%= @weightchange.round(2) %>kg/10kg</h4>
+  <% end %>
 </div>

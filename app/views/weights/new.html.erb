@@ -4,7 +4,7 @@
   <%= form_for @weight, html: { class: 'form-inline'} do |f| %>
     <div class="form-group">
       <%= f.label :weight %>
-      <%= f.number_field :weight, class: "form-control" %>
+      <%= f.number_field :weight, class: "form-control", step: "0.01" %>
     </div>
       <%= f.submit "追加", class: "btn btn-default" %>
   <% end %>

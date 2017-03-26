@@ -1,5 +1,17 @@
-<div class= contents >
-  <p>Today's<%= @babyname %>ちゃん</p>
-  <p>生まれるまで、あと<%=  %>日</p>
-  <p><%=  %>日目　ヶ月　(週　日)</p>
+<div class ="contents row" >
+  <h1><%= @today %></h1>
+  <h1>今日の<%= @topbabyname %>ちゃん</h1>
+
+  <div class="ballon1">
+    <div class="balloon">
+      <h3><%= simple_format(@babycomment) %></h3>
+    </div>
+  </div>
+  <ul>
+    <li>
+      <img src= "/assets/baby.png" alt="baby" class="baby-image">
+    </li>
+  </ul>
+  <h4>生まれるまで、あと<%= @dateofbirth %>日</h4>
+  <h4>妊娠<%= @month_pregnancy %>ヶ月<%= @day_pregnancy %>日目(<%= @today_pregnancy %>日目)</h4>
 </div>
